@@ -10,6 +10,7 @@ public class Readwrite
      {
        this.filename = name;
      }
+     
     public String Read(String filename) throws FileNotFoundException
     {
         System.out.println(filename);
@@ -23,6 +24,7 @@ public class Readwrite
         }
             return "";
            }
+           
      //Creating a new asm file and saving everything in the file 
      public  void save(String data)
    { 
