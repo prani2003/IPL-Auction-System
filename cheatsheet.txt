@@ -1,0 +1,78 @@
+//cha
+view all data bases : show dbs;
+Make a database and use existing database   : use 'nameofdatabase'
+find out working db : db
+delete database     : db.dropDatabase();
+see the collections : show collections;
+create a collections: db.createCollections('<nameofdatabase>');
+
+db.<nameofcollection>.drop()
+
+
+//mangodb commands for rows
+
+Show all rows in a collection : db.Player.find()
+Show all rows in a collection : db.Player.find().pretty()  prettified //look good
+//limit the number of rows and output 
+Show all rows in a collection : db.Player.find().pretty().limit(2)  prettified //look good ouput 2 rows 
+Insert one row : db.Player.insert({
+    'name':'Nikhil',
+    'lanuage':'java',
+    'membersince': 5
+    'Date':new Date()
+      })
+
+Insert many rows : db.Player.insertMany([
+    {
+    'name':'Nikhil',
+    'lanuage':'java',
+    'membersince': 5
+      },
+      {
+    'name':'Archana',
+    'lanuage':'java',
+    'membersince': 5
+      },
+      {
+    'name':'Khusi',
+    'lanuage':'java',
+    'membersince': 5
+      },
+      {
+    'name':'Golu',
+    'lanuage':'java',
+    'membersince': 5
+      },
+      ]
+      )
+Search in a mongoDb Database 
+db.Player.find({language:'java',}) //one parameter Search
+db.Player.find({language:'java',name:'Nikhil'}) //two parameter search 
+db.Player.findone({language:'java',name:'Nikhil'}) //return the first row matching the object
+
+//Count the number of rows in the output
+count matched items in rows in a collection : db.Player.find().count()
+
+
+//Sorting the data 
+db.Player.find().sort(<basis of Sorting>)
+
+//update a row 
+db.Players.update({name:'Nikhil'},
+    {
+    'name':'Abinash',
+    'lanuage':'java',
+    'membersince': 5  //update will be saved 
+
+    })
+
+//new will be created if not fount 
+db.Players.update({name:'Nikhil'},
+    {
+    'name':'Abinash',
+    'lanuage':'java',
+    'membersince': 5  //update will be saved 
+
+    },
+    {upsert:true
+    })
