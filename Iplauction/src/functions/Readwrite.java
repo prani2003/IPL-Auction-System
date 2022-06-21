@@ -1,4 +1,4 @@
-package Functions;
+package functions;
 //This module will read and write the files.
 import java.io.*;
 import java.util.Scanner;

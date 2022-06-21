@@ -1,7 +1,7 @@
-package Usermanagement;
-import Functions.Func;
-import Functions.Readwrite;
-import Users.Admin;
+package usermanagement;
+import functions.Func;
+import functions.Readwrite;
+import users.Admin;
 
 //import java.util.concurrent.locks.ReadWriteLock;
 

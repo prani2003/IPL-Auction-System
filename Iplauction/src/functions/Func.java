@@ -1,4 +1,4 @@
-package Functions;
+package functions;
 import java.util.*;
 //functions to get input and return the inputs taken 
 public class Func

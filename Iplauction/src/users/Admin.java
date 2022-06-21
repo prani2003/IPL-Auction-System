@@ -1,7 +1,7 @@
-package Users;
-import Main.Main;
-import Usermanagement.CreateUser;
-import Functions.Func;
+package users;
+import iplauctionsystem.*;
+import usermanagement.CreateUser;
+import functions.Func;
 
 public class Admin {
     public static void admin()
@@ -75,7 +75,7 @@ private  static void feature() {
           case "logout":
           {
          
-            Main.getID_psw();
+            Auction.getID_psw();
         
          break;
           }
