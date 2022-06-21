@@ -43,4 +43,11 @@ public static void clear() {
     System.out.print("033[H033[2J");  
     System.out.flush();
 }
+public static void printarr(String[] arr)
+{
+    for(String i:arr)
+    {
+        print(i+ " ");
+    }
+}
 }

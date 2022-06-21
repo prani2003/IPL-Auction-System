@@ -3,7 +3,7 @@ package users;
 //import usermanagement.CreateUser;
 import functions.Func;
 
-public class Admin {
+public class Teams {
     public static void admin()
     {
         
