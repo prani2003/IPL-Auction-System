@@ -53,6 +53,8 @@ their categories.
 ## Working of the project
 ● The unsold Players will be moved to Queue. So, it can be
 presented again later for the auction.
+
+
 ● Players who are purchased by Team Managers will be added
 to their respective Team Stack.
 
